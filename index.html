@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="static/style.css" rel="stylesheet" type="text/css" />
+        <link href="static/lib/codemirror.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="static/lib/codemirror.js"></script>
+        <script type="text/javascript" src="static/mode/javascript.js"></script>
+        <script type="text/javascript" src="static/mode/css.js"></script>
+        <script type="text/javascript" src="static/mode/xml.js"></script>
+        <script type="text/javascript" src="static/mode/htmlmixed.js"></script>
+        <script type="text/javascript" src="static/jq.js"></script>
+        <script type="text/javascript" src="static/portal.js"></script>
+        
+        <title>JsTester</title>
+    </head>
+    <body>
+        <div id="editor" class="container">
+            <ul id="editor-menu">
+                <li onclick="viewIt();">&#9654; Run</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Header</li>
+            </ul>
+
+            <div class="panel" id="panel-html"><textarea data-mode="html" id="edit-html"></textarea></div>
+            <div class="panel" id="panel-css"><textarea data-mode="css" id="edit-css"></textarea></div>
+            <div class="panel" id="panel-javascript"><textarea data-mode="javascript" id="edit-javascript"></textarea></div>
+            <div class="panel" id="panel-header"><textarea data-mode="html" id="edit-header"></textarea></div>
+        </div>
+        <div id="viewer" class="container">
+            <iframe id="viewer-frame" src="about.html" frameborder="0" width="100%"></iframe>
+        </div>
+    </body>
+</html>

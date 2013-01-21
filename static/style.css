@@ -1,0 +1,37 @@
+body {
+    font:.9em sans-serif, serif, arial;
+    margin:0;
+    padding:0;
+    background:#EFF3F7;
+    overflow:hidden;
+}
+.container {
+    border:1px solid #8CA2B8;
+    background:#fff;
+    min-height:400px;
+    margin:.3em;
+}
+#editor {
+    position:absolute;
+    width:30em;
+    top:0;
+}
+#viewer {
+    margin-left:31em;
+}
+#editor-menu {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background:#3D6AA2;
+}
+#editor-menu li{
+    display:inline-block;
+    padding:.7em .9em;
+    cursor:pointer;
+    color:#fff;
+    font-size:.8em;
+}
+#editor-menu li:hover,
+#editor-menu li.selected { background:#335D98; }
+fieldset { overflow:auto; }
