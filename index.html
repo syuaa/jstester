@@ -19,16 +19,16 @@
         <div id="editor" class="container">
             <ul id="editor-menu">
                 <li onclick="viewIt();">&#9654; Run</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Header</li>
+                <li data-editor="html">HTML</li>
+                <li data-editor="css">CSS</li>
+                <li data-editor="javascript">JavaScript</li>
+                <li data-editor="header">Header</li>
             </ul>
 
-            <div class="panel" id="panel-html"><textarea data-mode="html" id="edit-html"></textarea></div>
-            <div class="panel" id="panel-css"><textarea data-mode="css" id="edit-css"></textarea></div>
-            <div class="panel" id="panel-javascript"><textarea data-mode="javascript" id="edit-javascript"></textarea></div>
-            <div class="panel" id="panel-header"><textarea data-mode="html" id="edit-header"></textarea></div>
+            <div class="panel" id="panel-html"><textarea data-mode="html" id="edit-html">HTML</textarea></div>
+            <div class="panel" id="panel-css"><textarea data-mode="css" id="edit-css">CSS</textarea></div>
+            <div class="panel" id="panel-javascript"><textarea data-mode="javascript" id="edit-javascript">JavaScript</textarea></div>
+            <div class="panel" id="panel-header"><textarea data-mode="html" id="edit-header">Header</textarea></div>
         </div>
         <div id="viewer" class="container">
             <iframe id="viewer-frame" src="about.html" frameborder="0" width="100%"></iframe>
